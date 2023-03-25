@@ -1,0 +1,8 @@
+{
+  "name": "clientA",
+  "version": "1.0.0",
+  "description": "Client A assets",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true
+}
