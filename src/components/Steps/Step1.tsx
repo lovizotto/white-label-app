@@ -46,7 +46,7 @@ interface FeaturedImageProps {
 const FeaturedImage: React.FC<FeaturedImageProps> = ({ image }) => {
   const imageSrc: string =
     useBrandConfig<string>(`assets/images/${image}`) ?? ""
-  return <Image w="64px" src={imageSrc} boxSize="50px" />
+  return <Image w="64px" src={imageSrc} />
 }
 
 export default Step1

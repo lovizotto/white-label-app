@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import { Box, ChakraProvider, extendTheme } from "@chakra-ui/react"
 import { Onboarding } from "@pages/onboarding"
 import config from "./config"
+
 const App = () => {
   const [theme, setTheme] = useState({})
-  // const brandConfig = useBrandConfig<any>("config.ts")
 
   useEffect(() => {
     if (config) {

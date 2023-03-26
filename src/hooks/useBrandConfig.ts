@@ -8,10 +8,13 @@ const useBrandConfig = <T>(assetPath: string): T | null => {
   useEffect(() => {
     const loadBrandAsset = async () => {
       try {
-        const { loadedAsset } = await import(`@${brand}/src/${assetPath}`)
+        const { default: loadedAsset } = await import(
+          `../../${brand}/src/${assetPath}`
+        )
         setBrandAsset(loadedAsset)
       } catch (e) {
-        const { defaultAsset } = await import(`../${assetPath}`)
+        const { default: defaultAsset } = await import(`../${assetPath}`)
+
         setBrandAsset(defaultAsset)
       }
     }
