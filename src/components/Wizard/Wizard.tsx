@@ -54,7 +54,7 @@ export const Wizard: React.FC<WizardProps> = ({ steps, onFinish }) => {
           <StepProgressBar
             steps={steps.length}
             activeStep={activeStep}
-            activeColor="teal"
+            activeColor="brand.primary"
             inactiveColor="gray.200"
           />
         </Container>

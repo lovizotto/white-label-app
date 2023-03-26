@@ -57,7 +57,6 @@ const BarList: React.FC<BarListProps> = (props) => {
           w="80px"
           flexGrow={1}
           flexShrink={1}
-          bg="brand.primary"
         />
       ))}
     </HStack>
